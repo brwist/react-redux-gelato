@@ -22,6 +22,10 @@ class Register extends Component {
       more8Characters: false
     };
   }
+    
+  componentDidMount() {
+    document.getElementsByTagName("BODY")[0].click()
+  }
 
   showHide = e => {
     this.setState({

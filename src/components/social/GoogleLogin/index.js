@@ -1,9 +1,7 @@
 import React, { Component } from 'react';
 
 //Assets
-import google from '../../../assets/images/google.png'
 import config from '../config';
-import '../../../assets/css/main.css';
 
 class GoogleLogin extends Component{
     constructor(props) {
@@ -76,7 +74,7 @@ class GoogleLogin extends Component{
     render(){
         return(
             <div className="social-button" onClick={ () => this.googleLogin() }>
-                <div className="google-icon"></div>
+                <div className="icon icon-google"></div>
                 <div>{this.state.button_text}</div>
             </div>
         )

@@ -1,9 +1,7 @@
 import React, { Component } from 'react';
 
 //Assets
-import facebook from '../../../assets/images/facebook.png'
 import config from '../config';
-import '../../../assets/css/main.css';
 
 class FacebookLogin extends Component{
     
@@ -86,7 +84,7 @@ class FacebookLogin extends Component{
     render(){
         return(
             <div className="social-button" onClick={ () => this.facebookLogin() }>
-                <div className="facebook-icon"></div>
+                <div className="icon icon-facebook"></div>
                 <div>{this.state.button_text}</div>
             </div>
         )
