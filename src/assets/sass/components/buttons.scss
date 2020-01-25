@@ -1,0 +1,81 @@
+.register-login-button.middle {
+  height: 50px;
+  line-height: 1;
+}
+.register-login-button {
+  font-family: "Comfortaa";
+  margin-bottom: 8px;
+  text-align: center;
+  cursor: pointer;
+  background: $border-color;
+  height: 65px;
+  font-weight: 600;
+  border: 2px solid $border-color;
+  border-radius: 6px;
+  font-size: 21px;
+  line-height: 2.5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: $white;
+  width: 100%;
+  user-select: none;
+}
+
+.register-login-button:hover {
+  border-color: $active-color;
+  background: $white;
+  color: $font-color;
+}
+
+.register-login-button:focus,
+.register-login-button:active {
+  border-color: $active-color;
+  background: $active-color;
+  color: $white;
+}
+
+/* Social button */
+.social-button-wrap {
+  display: flex;
+  align-items: center;
+}
+.social-button-wrap .social-button {
+  height: 50px;
+}
+.social-button-wrap .social-button:first-child {
+  margin-right: 5px;
+}
+.social-button-wrap .social-button:last-child {
+  margin-left: 5px;
+}
+.social-button {
+  border: 2px solid $border-color;
+  border-radius: 6px;
+  height: 65px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  user-select: none;
+  font-size: 18px;
+  font-weight: 900;
+}
+.social-button:hover {
+  cursor: pointer;
+  border: 2px solid $active-color;
+}
+.social-button:focus,
+.social-button:active {
+  background: $active-color;
+  color: $white;
+  border-color: $active-color;
+}
+
+.social-button a {
+  color: $font-color;
+}
+.social-button a:active {
+  color: $white;
+}

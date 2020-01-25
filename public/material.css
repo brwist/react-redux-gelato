@@ -6123,22 +6123,6 @@ textarea.materialize-textarea:focus:not([readonly]) {
 	box-shadow: 0 1px 0 0 #26a69a
 }
 
-input:not([type]):focus:not([readonly])+label,
-input[type=text]:not(.browser-default):focus:not([readonly])+label,
-input[type=password]:not(.browser-default):focus:not([readonly])+label,
-input[type=email]:not(.browser-default):focus:not([readonly])+label,
-input[type=url]:not(.browser-default):focus:not([readonly])+label,
-input[type=time]:not(.browser-default):focus:not([readonly])+label,
-input[type=date]:not(.browser-default):focus:not([readonly])+label,
-input[type=datetime]:not(.browser-default):focus:not([readonly])+label,
-input[type=datetime-local]:not(.browser-default):focus:not([readonly])+label,
-input[type=tel]:not(.browser-default):focus:not([readonly])+label,
-input[type=number]:not(.browser-default):focus:not([readonly])+label,
-input[type=search]:not(.browser-default):focus:not([readonly])+label,
-textarea.materialize-textarea:focus:not([readonly])+label {
-	color: #26a69a
-}
-
 input:not([type]):focus.valid~label,
 input[type=text]:not(.browser-default):focus.valid~label,
 input[type=password]:not(.browser-default):focus.valid~label,

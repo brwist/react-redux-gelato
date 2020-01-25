@@ -1,11 +1,12 @@
 import React, { Component, Fragment } from "react";
-import { Link, withRouter } from "react-router-dom";
-import PropTypes from "prop-types";
-import { connect } from "react-redux";
+import {  withRouter } from "react-router-dom";
 import classnames from "classnames";
 import FacebookLogin from "../social/FacebookLogin/";
 import GoogleLogin from "../social/GoogleLogin/";
 import Layout from "../../layout";
+
+// Helpers
+import { emailValidation } from "../../helpers";
 
 class Register extends Component {
   constructor() {
@@ -23,10 +24,6 @@ class Register extends Component {
     };
   }
     
-  componentDidMount() {
-    document.getElementsByTagName("BODY")[0].click()
-  }
-
   showHide = e => {
     this.setState({
       isShowPassword: !this.state.isShowPassword
@@ -48,8 +45,7 @@ class Register extends Component {
   };
 
   validate_email(email) {
-    var regExp = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
-    if (!regExp.test(email)) {
+    if (!emailValidation(email)) {
       this.setState({
         errors: { email: "Please enter a valid email address" }
       });
@@ -264,14 +260,4 @@ class Register extends Component {
   }
 }
 
-Register.propTypes = {
-  auth: PropTypes.object.isRequired,
-  errors: PropTypes.object.isRequired
-};
-
-const mapStateToProps = state => ({
-  auth: state.auth,
-  errors: state.errors
-});
-
-export default connect(mapStateToProps, {})(withRouter(Register));
+export default (withRouter(Register));

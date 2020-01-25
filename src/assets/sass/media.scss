@@ -1,0 +1,31 @@
+@media screen and (max-width: 1200px) {
+  body {
+    background-size: auto;
+    background-position: inherit;
+    background-position-y: bottom;
+  }
+}
+@media screen and (max-width: 480px) {
+  .not-member-container {
+    flex-direction: column;
+  }
+  .form-container {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .form-title {
+    font-size: 24px;
+  }
+  .form-description {
+    font-size: 16px;
+  }
+  .form-container {
+    max-width: 90%;
+  }
+  .social-button {
+    font-size: 16px;
+  }
+  .already-member-container .register-login-button {
+    max-width: 100px;
+  }
+}
